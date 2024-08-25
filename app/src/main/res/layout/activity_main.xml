@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_enter"
+        style="@style/BotaoFuncao"
+        android:layout_width="86dp"
+        android:layout_height="211dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#FFC107"
+        android:text="E\nn\nt\ne\nr"
+        android:textColor="@color/black"
+        android:textDirection="locale"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_0"
+        style="@style/BotaoNumerico"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_enter"
+        app:layout_constraintEnd_toStartOf="@+id/btn_virgula"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_enter" />
+
+    <Button
+        android:id="@+id/btn_virgula"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text=","
+        app:layout_constraintBottom_toBottomOf="@+id/btn_0"
+        app:layout_constraintEnd_toStartOf="@+id/btn_back_space"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_0"
+        style="@style/BotaoNumerico"/>
+
+    <Button
+        android:id="@+id/btn_back_space"
+        style="@style/BotaoFuncao"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#FF5722"
+        app:icon="@android:drawable/ic_input_delete"
+        app:iconGravity="end"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_virgula"
+        app:layout_constraintEnd_toStartOf="@+id/btn_soma"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_virgula" />
+
+    <Button
+        android:id="@+id/btn_soma"
+        style="@style/BotaoFuncao"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#D0B3FF"
+        android:text="+"
+        android:textColor="@color/black"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_back_space" />
+
+    <Button
+        android:id="@+id/btn_1"
+        style="@style/BotaoNumerico"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_0"
+        app:layout_constraintStart_toStartOf="@+id/btn_0" />
+
+    <Button
+        android:id="@+id/btn_2"
+        style="@style/BotaoNumerico"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_virgula"
+        app:layout_constraintStart_toStartOf="@+id/btn_virgula" />
+
+    <Button
+        android:id="@+id/btn_3"
+        style="@style/BotaoNumerico"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/btn_back_space"
+        app:layout_constraintStart_toEndOf="@+id/btn_2"
+        app:layout_constraintStart_toStartOf="@+id/btn_back_space" />
+
+    <Button
+        android:id="@+id/btn_subtracao"
+        style="@style/BotaoFuncao"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D0B3FF"
+        android:text="-"
+        android:textColor="@color/black"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_soma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_soma" />
+
+    <Button
+        android:id="@+id/btn_4"
+        style="@style/BotaoNumerico"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_1"
+        app:layout_constraintStart_toStartOf="@+id/btn_1" />
+
+    <Button
+        android:id="@+id/btn_5"
+        style="@style/BotaoNumerico"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/btn_2"
+        app:layout_constraintStart_toStartOf="@+id/btn_2" />
+
+    <Button
+        android:id="@+id/btn_6"
+        style="@style/BotaoNumerico"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/btn_3"
+        app:layout_constraintStart_toStartOf="@+id/btn_3" />
+
+    <Button
+        android:id="@+id/btn_multiplicacao"
+        style="@style/BotaoFuncao"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D0B3FF"
+        android:text="x"
+        android:textColor="@color/black"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_subtracao"
+        app:layout_constraintStart_toStartOf="@+id/btn_subtracao" />
+
+    <Button
+        android:id="@+id/btn_clr"
+        style="@style/BotaoFuncao"
+        android:layout_width="86dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D0B3FF"
+        android:text="CLR"
+        android:textColor="@color/black"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_enter"
+        app:layout_constraintStart_toStartOf="@+id/btn_enter" />
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/btn_4"
+        app:layout_constraintStart_toStartOf="@+id/btn_4"
+        style="@style/BotaoNumerico" />
+
+    <Button
+        android:id="@+id/btn_8"
+        style="@style/BotaoNumerico"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/btn_5"
+        app:layout_constraintStart_toStartOf="@+id/btn_5" />
+
+    <Button
+        android:id="@+id/btn_9"
+        style="@style/BotaoNumerico"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/btn_6"
+        app:layout_constraintStart_toStartOf="@+id/btn_6" />
+
+    <Button
+        android:id="@+id/btn_divisao"
+        style="@style/BotaoFuncao"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D0B3FF"
+        android:text="÷"
+        android:textColor="@color/black"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_multiplicacao"
+        app:layout_constraintStart_toStartOf="@+id/btn_multiplicacao" />
+
+    <EditText
+        android:id="@+id/et_visor"
+        android:layout_width="361dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="116dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_PV"
+        android:layout_width="68dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="PV"
+        app:layout_constraintBottom_toTopOf="@+id/btn_clr"
+        app:layout_constraintEnd_toStartOf="@+id/btn_FV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_FV"
+        android:layout_width="68dp"
+        android:layout_height="49dp"
+        android:text="FV"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_PV"
+        app:layout_constraintStart_toEndOf="@+id/btn_PV" />
+
+    <Button
+        android:id="@+id/btn_PMT"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:text="PMT"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_FV"
+        app:layout_constraintEnd_toStartOf="@+id/btn_taxa"
+        app:layout_constraintStart_toEndOf="@+id/btn_FV" />
+
+    <Button
+        android:id="@+id/btn_taxa"
+        android:layout_width="76dp"
+        android:layout_height="48dp"
+        android:text="taxa"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_PMT"
+        app:layout_constraintEnd_toStartOf="@+id/btn_n" />
+
+    <Button
+        android:id="@+id/btn_n"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="N"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_taxa"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
